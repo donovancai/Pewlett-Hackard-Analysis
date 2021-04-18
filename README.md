@@ -15,7 +15,7 @@ Here are the four major findings from the analysis:
 
 * To create the mentorship eligibility table, all employees are filtered to show those born in 1965 only and are current employees of the company. The list is then sorted by arranging employee numbers column in ascending fashion, and also sorting the most recent employment date column (to_date) from titles table in descending fashion. Using COUNT() on the employee numbers column, there is a total of 1549 current employees eligible for mentorship. 
 
-* Using the COUNT() function on the 'title' column in the mentorship eligibility table, the total number of eligible employees by title can be seen [HERE](LINK). Senior Staff and Senior Engineer are the two titles with the most eligible employees for mentorship. 
+* Using the COUNT() function on the 'title' column in the mentorship eligibility table, the total number of eligible employees by title can be seen [here](https://github.com/donovancai/Pewlett-Hackard-Analysis/blob/main/eligible_for_mentorship.png). Senior Staff and Senior Engineer are the two titles with the most eligible employees for mentorship. 
 
 ### Summary
 
