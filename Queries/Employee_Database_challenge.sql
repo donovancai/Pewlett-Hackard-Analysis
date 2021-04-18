@@ -225,8 +225,6 @@ FROM unique_titles
 GROUP BY title
 ORDER BY count DESC;
 
-SELECT * FROM retiring_titles;
-
 -- DELIVERABLE 2
 
 SELECT * FROM employees;
@@ -249,6 +247,21 @@ ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no, t.to_date DESC;
-	
 
+
+-- Deliverable 3
+-- total retiring titles
+SELECT SUM(count) FROM retiring_titles;
+
+-- total nunmber of employees
+SELECT COUNT(emp_no) FROM employees;
+
+-- sum of eligible employees for mentorship
+SELECT COUNT(emp_no) FROM mentorship_eligibilty;
+
+-- count of eligible employees for mentorship
+SELECT COUNT(title), title
+FROM mentorship_eligibilty
+GROUP BY title
+ORDER BY count DESC;
 	
